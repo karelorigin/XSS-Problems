@@ -99,7 +99,7 @@ Double quotes are properly encoded.
 behavior: url(xss.htc)
 ```
 
-xss.htc:
+Contents xss.htc:
 ```
 <script>alert(1)</script>
 ```
@@ -114,7 +114,7 @@ xss.htc needs to be served as `text/x-component` and only works in docmode 9 whi
 behavior: url(xss.txt)
 ```
 
-xss.txt:
+Contents xss.txt:
 ```
 <scriptlet>  
     <implements type="behavior"/>
