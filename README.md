@@ -36,7 +36,7 @@ It's not very common but it does happen.
 
 By [me](https://twitter.com/Karel_Origin).
 
----
+💡
 
 ```
 '"/onclick='alert(1)'/accesskey='X'
