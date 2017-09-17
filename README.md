@@ -10,7 +10,7 @@ Extra solutions to solved problems are also welcome.
 
 ## Hidden Input fields
 
-**Problem**
+📝 **Problem**
 
 ```
 <input type="hidden" value="[injection-point]">
@@ -18,9 +18,7 @@ Extra solutions to solved problems are also welcome.
 
 Greater than (>) and Less than (<) are properly encoded, you can only add attributes to the input tag.
 
----
-
-**Solution(s):**
+💡 **Solution(s):**
 
 ```
 '"/autofocus/onfocus='alert(1)'x=
@@ -54,7 +52,7 @@ By [PortSwigger](http://blog.portswigger.net/2015/11/xss-in-hidden-input-fields.
 
 ## Multiple reflections in a script context
 
-**Problem**
+📝 **Problem**
 
 ```
 x = "[injection-point]"
@@ -73,9 +71,8 @@ Injecting "1" in parameter "x" will result in:
 x = "1"
 y = "1"
 ```
----
 
-**Solution(s):**
+💡 **Solution(s):**
 
 There is no solution to this problem yet.
 
@@ -85,7 +82,7 @@ Feel free to [contribute](https://github.com/karelorigin/XSS-Problems/issues/new
 
 ## CSS Injection to XSS
 
-**Problem**
+📝 **Problem**
 
 ```
 <input style="[injection-point]">
@@ -95,9 +92,8 @@ Feel free to [contribute](https://github.com/karelorigin/XSS-Problems/issues/new
 
 Double quotes are properly encoded.
 
----
 
-**Solution(s):**
+💡 **Solution(s):**
 
 ```
 behavior: url(xss.htc)
@@ -112,7 +108,7 @@ xss.htc:
 
 xss.htc needs to be served as `text/x-component` and only works in docmode 9 which makes this payload pretty useless
 
----
+💡
 
 ```
 behavior: url(xss.txt)
