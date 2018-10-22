@@ -6,9 +6,12 @@ Extra solutions to solved problems are also welcome.
 
 ---
 
+
 # Problems and Solutions
 
+
 ## Hidden Input fields
+
 
 📝 **Problem**
 
@@ -23,6 +26,7 @@ Greater than (>) and Less than (<) are properly encoded, you can only add attrib
 ```
 '"/autofocus/onfocus='alert(1)'x=
 ```
+
 
 **Note:**
 
@@ -42,6 +46,7 @@ By [me](https://twitter.com/Karel_Origin).
 '"/onclick='alert(1)'/accesskey='X'
 ```
 
+
 **Note:**
 
 Requires you to press ALT+SHIFT+X on Windows/Linux or CTRL+ALT+X on OS X. (Only works in Firefox.)
@@ -50,7 +55,10 @@ By [PortSwigger](http://blog.portswigger.net/2015/11/xss-in-hidden-input-fields.
 
 ---
 
+
+
 ## Multiple reflections in a script context
+
 
 📝 **Problem**
 
@@ -60,6 +68,7 @@ y = "[injection-point]"
 ```
 
 Double quotes are properly encoded, it's only possible to escape the string with %0A and escape quotes using \
+
 
 **Note:**
 
@@ -73,12 +82,11 @@ y = "1"
 ```
 
 💡 **Solution(s):**
-
-There is no solution to this problem yet.
-
-Feel free to [contribute](https://github.com/karelorigin/XSS-Problems/issues/new)!
+There is no solution yet. But feel free to [submit](https://github.com/karelorigin/XSS-Problems/issues/new) an issue and help :)
 
 ---
+
+
 
 ## CSS Injection to XSS
 
@@ -88,9 +96,10 @@ Feel free to [contribute](https://github.com/karelorigin/XSS-Problems/issues/new
 <input style="[injection-point]">
 ```
 
+
 **Note:**
 
-Double quotes are properly encoded.
+Double quotes are properly encoded
 
 
 💡 **Solution(s):**
@@ -103,6 +112,7 @@ Contents xss.htc:
 ```
 <script>alert(1)</script>
 ```
+
 
 **Note:**
 
@@ -122,6 +132,7 @@ Contents xss.txt:
 </scriptlet>  
 ```
 
+
 **Note:**
 
 This doesn't work Cross-Domain, which means that you need to be able to upload a file to the current domain. The file needs to be served with one of the following Content-Types.
@@ -137,6 +148,8 @@ This technique won't work if the site uses the `X-Content-Type-Options: nosniff`
 By [Filedescriptor](http://blog.innerht.ml/cascading-style-scripting/).
 
 ---
+
+
 
 # Contribute
 
