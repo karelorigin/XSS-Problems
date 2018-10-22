@@ -82,8 +82,8 @@ y = "1"
 ```
 
 💡 **Solution(s):**
+There is no solution yet. But feel free to [submit](https://github.com/karelorigin/XSS-Problems/issues/new) an issue and help :)
 
-```1";alert(1);//</script><!--```
 ---
 
 
@@ -146,30 +146,6 @@ This doesn't work Cross-Domain, which means that you need to be able to upload a
 This technique won't work if the site uses the `X-Content-Type-Options: nosniff` or `Content-Disposition: attachment` header.
 
 By [Filedescriptor](http://blog.innerht.ml/cascading-style-scripting/).
-
----
-
-
-
-## Reflection in the src attribute
-
-
-📝 **Problem**
-
-The word 'javascript' is blacklisted, so javascript:alert(1); will be filtered.  
-
-
-**Note:**
-
-The reflection happens <iframe src="[here]">, and quotes are properly encoded.
-
-
-
-💡 **Solution(s):**
-
-By using a tab in the middle of the word, we can bypass the blacklist.
-
-```Javascr%09ipt:alert(1)```
 
 ---
 
