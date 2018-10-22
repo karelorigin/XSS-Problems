@@ -136,6 +136,30 @@ By [Filedescriptor](http://blog.innerht.ml/cascading-style-scripting/).
 
 ---
 
+## Reflection in the src attribute
+
+📝 **Problem**
+
+The word 'javascript' is blacklisted, so javascript:alert(1); will be filtered.  
+
+
+**Note:**
+
+The reflection happens <iframe src="[here]">, and quotes are properly encoded.
+
+
+
+💡 **Solution(s):**
+
+By using a tab in the middle of the word, we can bypass the blacklist.
+
+```Javascr%09ipt:alert(1)```
+
+
+
+---
+
+
 
 # Contribute
 
