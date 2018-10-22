@@ -99,7 +99,7 @@ There is no solution yet. But feel free to [submit](https://github.com/karelorig
 
 **Note:**
 
-We dont want to double fire the payload.
+Double quotes are properly encoded
 
 
 💡 **Solution(s):**
