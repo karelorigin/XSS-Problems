@@ -74,9 +74,7 @@ y = "1"
 
 💡 **Solution(s):**
 
-There is no solution to this problem yet.
-
-Feel free to [contribute](https://github.com/karelorigin/XSS-Problems/issues/new)!
+```1";alert(1);//</script><!--```
 
 ---
 
