@@ -63,8 +63,7 @@ By [PortSwigger](http://blog.portswigger.net/2015/11/xss-in-hidden-input-fields.
 📝 **Problem**
 
 ```
-x = "[injection-point]"
-y = "[injection-point]"
+x = "[injection-point]"; y = "[injection-point]"
 ```
 
 Double quotes are properly encoded, it's only possible to escape the string with %0A and escape quotes using \
@@ -77,13 +76,11 @@ The same parameter is used for both injection points.
 Injecting "1" in parameter "x" will result in:
 
 ```
-x = "1"
-y = "1"
+x = "1"; y = "1"
 ```
 
 💡 **Solution(s):**
-There is no solution yet. But feel free to [submit](https://github.com/karelorigin/XSS-Problems/issues/new) an issue and help :)
-
+```;alert(0);//\```
 ---
 
 
